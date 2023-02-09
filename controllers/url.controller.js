@@ -1,7 +1,7 @@
 const { UrlModel } = require("../models/url.model");
 const extractor = require('unfluff');
 const { spawn } = require('node:child_process');
-const fs = require('fs');
+const fs = require('node:fs');
 
 
 
@@ -14,8 +14,11 @@ const scrapUrl = async (req, res) => {
     scrap.stdout.on('data', data => {
       result += data.toString();
     });
+    scrap.stderr.on('data', (data) => {
+      console.error(`stderr: ${data}`);
+    });
 
-    scrap.on('close', () => {
+    scrap.on('close', (code) => {
     const data = extractor(result);
     const textdata = data.text;
     const media = data?.videos;
@@ -28,14 +31,19 @@ const scrapUrl = async (req, res) => {
         wc.stdout.on('data', data => {
           val = data.toString();
         });
-        wc.on('close', async () => {
+        wc.stderr.on('data', (data) => {
+          console.error(`stderr: ${data}`);
+        });
+        wc.on('close', async (code) => {
           payload.media = media;
           payload.links = links;
           payload.count = parseInt(val.split(' ')[0], 10);
           await UrlModel.insertMany([{ ...payload }]);
+          console.log(`child process exited with code ${code}`);
           res.send(payload);
         });
       });
+      console.log(`child process exited with code ${code}`);
     });
 
   } catch (err) {
