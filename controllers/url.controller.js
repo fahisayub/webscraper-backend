@@ -1,7 +1,7 @@
 const { UrlModel } = require("../models/url.model");
 const extractor = require('unfluff');
-const { spawn } = require('node:child_process');
-const fs = require('node:fs');
+const { spawn } = require('child_process');
+const fs = require('fs');
 
 
 
