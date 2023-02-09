@@ -41,8 +41,8 @@ const scrapUrl = async (req, res) => {
             payload.links = links;
             payload.count = parseInt(val.split(' ')[0], 10);
             console.log(`child process exited with code ${code}`);
-            await UrlModel.insertMany([{ ...payload }]);
-            res.send(payload);
+            let data= await UrlModel.insertMany([{ ...payload }]);
+            res.send(data);
           }catch(err){
             console.log(err);
           }
