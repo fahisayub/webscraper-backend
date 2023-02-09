@@ -9,7 +9,7 @@ const scrapUrl = async (req, res) => {
   const { url } = req.body;
   let payload = { url };
   try {
-    const scrap = spawn('curl', ['-s', url]);
+    const scrap =await spawn('curl', ['-s', url]);
     let result = '';
     scrap.stdout.on('data', data => {
       result += data.toString();
@@ -21,9 +21,9 @@ const scrapUrl = async (req, res) => {
       const media = data?.videos;
       data.image && media.push({ src: data.image });
       const links = data?.links;
-      fs.writeFile('scraptext.txt', textdata, () => {
+      fs.writeFile('scraptext.txt', textdata, async() => {
 
-        const wc = spawn('wc', ['-w', 'scraptext.txt'])
+        const wc = await spawn('wc', ['-w', 'scraptext.txt'])
         let result = '';
         wc.stdout.on('data', data => {
           result = data.toString();
