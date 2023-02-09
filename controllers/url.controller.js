@@ -9,29 +9,29 @@ const scrapUrl = async (req, res) => {
   const { url } = req.body;
   let payload = { url };
   try {
-    const scrap =await spawn('curl', ['-s', url]);
+    const scrap = spawn('curl', ['-s', url]);
     let result = '';
     scrap.stdout.on('data', data => {
       result += data.toString();
     });
 
     scrap.on('close', () => {
-      const data = extractor(result);
-      const textdata = data.text;
-      const media = data?.videos;
-      data.image && media.push({ src: data.image });
-      const links = data?.links;
-      fs.writeFile('scraptext.txt', textdata, async() => {
+    const data = extractor(result);
+    const textdata = data.text;
+    const media = data?.videos;
+    data.image && media.push({ src: data.image });
+    const links = data?.links;
+       fs.writeFile('scraptext.txt', textdata, () => {
 
-        const wc = await spawn('wc', ['-w', 'scraptext.txt'])
-        let result = '';
+        const wc =  spawn('wc', ['-w', 'scraptext.txt'])
+        let val = '';
         wc.stdout.on('data', data => {
-          result = data.toString();
+          val = data.toString();
         });
         wc.on('close', async () => {
           payload.media = media;
           payload.links = links;
-          payload.count = parseInt(result.split(' ')[0], 10);
+          payload.count = parseInt(val.split(' ')[0], 10);
           await UrlModel.insertMany([{ ...payload }]);
           res.send(payload);
         });
