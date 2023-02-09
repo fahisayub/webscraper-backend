@@ -1,7 +1,7 @@
 const express = require("express");
 require("dotenv").config();
 const cors = require("cors");
-const PORT = process.env.PORT;
+const port = process.env.PORT;
 const { connectdb } = require("./config/db.config");
 const { urlRouter } = require("./routes/url.route");
 
@@ -13,18 +13,14 @@ app.get("/", (req, res) => {
   res.send("Welcome to the Web Page Scraper!");
 });
 
-app.use('/scrapurl', urlRouter);
+app.use('/scrapurl',urlRouter);
 
- connectdb().then(async () => {
+app.listen(port, async () => {
   try {
-    app.listen(PORT, () => {
-
-      console.log(`listening on port ${PORT}`);
-    })
+    await connectdb;
     console.log("Connected To MongoDB");
-
   } catch (e) {
     console.log(404, "Couldn't connect");
-
   }
-})
+  console.log(`listening on port ${port}`);
+});

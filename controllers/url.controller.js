@@ -28,7 +28,7 @@ const scrapUrl = async (req, res) => {
           wc.stderr.on('data', (data) => {
             console.error(`stderr: ${data}`);
           });
-          wc.on('close', async (code) => {
+          wc.on('close',  (code) => {
             payload.media = media;
             payload.links = links;
             payload.count = parseInt(val.split(' ')[0], 10);
