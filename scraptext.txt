@@ -1,43 +1,15 @@
-What would you like to learn more about?
+Google is launching new updates for Maps that are part of its plan to make the navigation app more immersive and intuitive for users, the company announced today at its event in Paris.
 
-Elon Musk takes swipe at SEC on heels of fraud settlement
+Most notably, the company announced that Immersive View is rolling out starting today in London, Los Angeles, New York, San Francisco and Tokyo. Immersive View, which Google first announced at I/O in May 2022, is designed to help you plan ahead and get a deeper understanding of a city before you visit it. The company plans to launch Immersive View in more cities, including Amsterdam, Dublin, Florence and Venice in the coming months.
 
-Tesla plans to hand car keys to robots next year
+The feature fuses billions of Street View and aerial images to create a digital model of the world. It also layers information on top of the digital model, such as details about the weather, traffic and how busy a location may be. For instance, say you’re planning to visit the Rijksmuseum in Amsterdam and want to get an idea of it before you go. You can use Immersive View to virtually soar over the building to get a better idea of what it looks like and where the entrances are located. You can also see what the area looks like at different times of the day and what the weather will be like. Immersive View can also show you nearby restaurants, and allows you look inside them to see if they would be an ideal spot for you.
 
-Biden calls earthquakes that hit Türkiye, Syria 'one of the worst'
+“To create these true-to-life scenes, we use neural radiance fields (NeRF), an advanced AI technique, transforms ordinary pictures into 3D representations,” Google explained in a blog post. “With NeRF, we can accurately recreate the full context of a place including its lighting, the texture of materials and what’s in the background. All of this allows you to see if a bar’s moody lighting is the right vibe for a date night or if the views at a cafe make it the ideal spot for lunch with friends.”
 
-Biden says US 'not looking for conflict' with China
+The company also announced that a new feature called “glanceable directions” is rolling out globally on Android and iOS in the coming months. The feature lets you track your journey right from your route overview or lock screen. Users will see updated ETAs and where to make your next turn. If you decide to take another path, the app will update your trip automatically. Google notes that previously, this information was only visible by unlocking your phone, opening the app and using comprehensive navigation mode. Glanceable directions can be used whenever you’re using the app, whether you’re walking, biking or taking public transit.
 
-Biden vows 'to protect' US, challenges Republicans on debt
+Google also announced that it’s expanding Search with Live View to more places in Europe in the coming months, including Barcelona, Madrid and Dublin. The Search with Live View feature lets you use your camera to find essential places like shops, ATMs and restaurants when you’re on the go. Say you’re in a place that you’re unfamiliar with and you want to find the nearest ATM, you can lift up your camera and search to instantly see the ATMs in the area. Google recently launched Search with Live View in London, Los Angeles, New York, Paris, San Francisco and Tokyo.
 
-Sorry, not sorry: Some 1/6 rioters change tune after apology
+In addition, the company’s Indoor Live View feature is expanding to over 1,000 new airports, train stations and malls in cities around the world, including London, Paris, Berlin, Madrid, Barcelona, Prague, Frankfurt, Tokyo, Sydney, Melbourne, São Paulo, Singapore and Taipei in the coming months. The Indoor Live View feature, which first launched in 2021, uses AR-powered arrows to point you in the right direction so you can quickly find the closest restrooms, lounges, taxi stands, car rentals and more.
 
-Elon Musk's 2018 tweet said that he had the financing to take Tesla private, even though it turned out he hadn’t gotten an iron-clad commitment for a deal that would have cost $20 billion to $70 billion to pull off.
-
-The tweets sent the Tesla share price on a rollercoaster ride.
-
-(Reuters Archive)
-
-Jurors have cleared Elon Musk of liability for investors' losses in a fraud trial over his 2018 tweets falsely claiming that he had funding in place to take Tesla private.
-
-Jurors on Friday deliberated for barely two hours before returning to the San Francisco courtroom to say they unanimously agreed that neither Musk nor the Tesla board perpetrated fraud with the tweets and in their aftermath.
-
-The tweets sent the Tesla share price on a rollercoaster ride, and Musk was sued by shareholders who said the tycoon acted recklessly in an effort to squeeze investors who had bet against the company.
-
-"Thank goodness, the wisdom of the people has prevailed!" tweeted Musk, who had tried but failed to get the trial moved to Texas on the grounds jurors in California would be biased against him.
-
-"I am deeply appreciative of the jury's unanimous finding of innocence in the Tesla 420 take-private case."
-
-Attorney Nicholas Porritt, who represents Glen Littleton and other investors in Tesla, had argued in court that the case was about making sure the rich and powerful have to abide by the same stock market rules as everyone else.
-
-"Elon Musk published tweets that were false with reckless disregard as to their truth," Porritt told the panel of nine jurors during closing arguments.
-
-Porritt pointed to expert testimony estimating that Musk's claim about funding, which turned out not to be true, cost investors billions of dollars overall and that Musk and the Tesla board should be made to pay damages.
-
-But Musk's attorney Alex Spiro successfully countered that the billionaire may have erred on the wording in a hasty tweet, but that he did not set out to deceive anyone.
-
-Spiro also portrayed the mercurial entrepreneur, who now owns Twitter, as having had a troubled childhood and having come to the United States as a poor youth chasing dreams.
-
-Musk testified during three days on the witness stand that his 2018 tweet about taking Tesla private at $420 a share was no joke and that Saudi Arabia's sovereign wealth fund was serious about helping him do it.
-
-READ MORE: Elon Musk disposes of over 19M Tesla shares a week after Twitter deal
+Last, Google is adding new features for EVs that have Google Maps built in. Users will soon been able to find stations that have chargers of 150 kilowatts or higher. Maps will also show users when places like a supermarket have charging stations on-site. In addition, Maps will start suggesting the best stop based on key factors, like current traffic, your charge level and expected energy on any trip that will require a charging stop. Google says all of these new EV features will start rolling out in the coming months.

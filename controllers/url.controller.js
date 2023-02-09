@@ -67,9 +67,18 @@ const deleteUrl = async (req, res) => {
     res.send({ msg: "Something went wrong", error: err });
   }
 };
+const getHistory=async(req,res)=>{
+  try{
+    let history=await UrlModel.find({});
+    res.send({ msg: "History data",data:history})
+  }catch(e){
+    res.send({ msg: "Something went wrong", error:e.message });
+  }
+  
+}
 
 const urlController = {
-  scrapUrl,updateUrl,deleteUrl
+  scrapUrl,updateUrl,deleteUrl,getHistory
 
 };
 module.exports = {
